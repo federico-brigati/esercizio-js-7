@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>File di Gatti</title>
+</head>
+<body>
+  <h1>Apri la console del browser (F12) per vedere i risultati</h1>
+
+  <script>
+    let totalGatti = 23;
+    let gattiPerFila = 5;
+
+    let fileTotali  = Math.floor(totalGatti / gattiPerFila);
+    let avanzo      = totalGatti % gattiPerFila;
+    let mancanti    = gattiPerFila - avanzo;
+
+    console.log(
+      "Ci sono " + fileTotali + " file di gatti e ne mancano " +
+      mancanti + " per una nuova fila, con un avanzo di " + avanzo
+    );
+  </script>
+</body>
+</html>
